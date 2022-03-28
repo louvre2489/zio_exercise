@@ -8,7 +8,7 @@ import scala.concurrent._
 import scala.io.StdIn
 import scala.util.Try
 
-object Main extends zio.App {
+object Main {// extends zio.App {
   def run(args: List[String]) = myAppLogic.exitCode
 
   val myAppLogic: ZIO[Console, IOException, Unit] =
